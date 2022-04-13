@@ -1,6 +1,6 @@
 import React from 'react';
 import type { ReactNode } from 'react';
-import { Button as TUIButton } from 'theme-ui';
+// import { Button as TUIButton } from 'theme-ui';
 
 type ButtonProps = {
   /**
@@ -20,6 +20,7 @@ type ButtonProps = {
 /**
 	Button component that the user can press to trigger an action.
  */
-export const Button = ({ variant = 'primary', ...otherProps }: ButtonProps) => (
-  <TUIButton variant={variant} {...otherProps} />
+export const Button = ({ variant = 'primary', children }: ButtonProps) => (
+  // <TUIButton variant={variant} {...otherProps} />
+  <button>{children}</button>
 );
